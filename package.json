@@ -1,20 +1,16 @@
 {
-  "name": "typescript-webpack-starter",
+  "name": "typescript-starter",
   "version": "0.0.1",
-  "description": "A very barebones starter project typescript development.",
-  "main": "index.js",
+  "description": "A very barebones starter project for typescript development.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tsc -p ./",
-    "build": "webpack --config webpack.config.js --watch",
-    "start": "webpack-dev-server --open"
+    "build": "parcel build index.html",
+    "start": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "awesome-typescript-loader": "^3.2.2",
-    "typescript": "^2.4.2",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "parcel": "^1.12.4",
+    "typescript": "^3.7.2"
   }
 }
